@@ -1,0 +1,83 @@
+\hypertarget{classEmpresa}{}\section{Empresa Class Reference}
+\label{classEmpresa}\index{Empresa@{Empresa}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEmpresa_a92762d2b8a30c8cfd9ac2ad235f491b1}\label{classEmpresa_a92762d2b8a30c8cfd9ac2ad235f491b1}} 
+{\bfseries Empresa} (string nome, string cnpj)
+\item 
+\mbox{\Hypertarget{classEmpresa_a9dba7316e0e0449abe9c9ec7015927e1}\label{classEmpresa_a9dba7316e0e0449abe9c9ec7015927e1}} 
+string {\bfseries get\+Nome} ()
+\item 
+\mbox{\Hypertarget{classEmpresa_a092761d57a5b02158dd63581fcb16a44}\label{classEmpresa_a092761d57a5b02158dd63581fcb16a44}} 
+void {\bfseries set\+Nome} (string nome1)
+\item 
+\mbox{\Hypertarget{classEmpresa_a7289c123e5515521179f96a2b5656745}\label{classEmpresa_a7289c123e5515521179f96a2b5656745}} 
+string {\bfseries get\+Cnpj} ()
+\item 
+\mbox{\Hypertarget{classEmpresa_ada3b928c6b2a3525616b8e3129ea2d40}\label{classEmpresa_ada3b928c6b2a3525616b8e3129ea2d40}} 
+void {\bfseries set\+Cnpj} (string cnpj1)
+\item 
+\mbox{\Hypertarget{classEmpresa_a740a11e864fb528c196db8ca2e111d4b}\label{classEmpresa_a740a11e864fb528c196db8ca2e111d4b}} 
+vector$<$ \hyperlink{classFuncionario}{Funcionario} $>$ {\bfseries get\+Lista\+\_\+funcionarios} ()
+\item 
+int \hyperlink{classEmpresa_a2bc3f3fc539f62491c5ba59c44e37723}{novo\+\_\+funcionario} ()
+\begin{DoxyCompactList}\small\item\em Método para adicionar novo funcionario na lista de funcionarios da classe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEmpresa_a0c54d6396db9722bd81adc055f456843}\label{classEmpresa_a0c54d6396db9722bd81adc055f456843}} 
+void \hyperlink{classEmpresa_a0c54d6396db9722bd81adc055f456843}{mostrar\+\_\+funcionarios} ()
+\begin{DoxyCompactList}\small\item\em Método backup caso a sobrecarga de operador não funcionasse. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEmpresa_ab94695460926625bc144ff9f28f170c4}\label{classEmpresa_ab94695460926625bc144ff9f28f170c4}} 
+void \hyperlink{classEmpresa_ab94695460926625bc144ff9f28f170c4}{aumento\+\_\+funcionarios} ()
+\begin{DoxyCompactList}\small\item\em Método dada porcentagem desejada vai adicionar um aumento no salario de todos os funcionarios. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEmpresa_acba146817470ae3fc0cacf460c2586fe}\label{classEmpresa_acba146817470ae3fc0cacf460c2586fe}} 
+void \hyperlink{classEmpresa_acba146817470ae3fc0cacf460c2586fe}{mostrar\+\_\+funcionarios\+\_\+inexperientes} ()
+\begin{DoxyCompactList}\small\item\em Método que exibe todos os dados dos funcionarios num periodo de experiência(do dia atual para 90 dias atras). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEmpresa_a1ce12337c48e08f6ef43e3aeb77135ac}\label{classEmpresa_a1ce12337c48e08f6ef43e3aeb77135ac}} 
+void \hyperlink{classEmpresa_a1ce12337c48e08f6ef43e3aeb77135ac}{media\+\_\+funcionarios} ()
+\begin{DoxyCompactList}\small\item\em Método que exibie a media dos funcionarios da empresa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEmpresa_a3b2fcbec8ee9978fc4df2b095fe9180e}\label{classEmpresa_a3b2fcbec8ee9978fc4df2b095fe9180e}} 
+ostream \& \hyperlink{classEmpresa_a3b2fcbec8ee9978fc4df2b095fe9180e}{operator$<$$<$} (ostream \&os, vector$<$ \hyperlink{classFuncionario}{Funcionario} $>$ \&funcionario)
+\begin{DoxyCompactList}\small\item\em sobrecarga de operador para \char`\"{}printar\char`\"{} a lista de funcionarios -\/$>$ vai receber como parametro a lista de funcionarios pra poder printar \end{DoxyCompactList}\item 
+ostream \& \hyperlink{classEmpresa_a09889fd249bbf085dad71d637538359f}{operator$<$$<$} (ostream \&os, \hyperlink{classEmpresa}{Empresa} empresa)
+\begin{DoxyCompactList}\small\item\em Sobreacarga do operador $<$$<$ para poder imprimir dados de uma empresa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmpresa_a2bc3f3fc539f62491c5ba59c44e37723}\label{classEmpresa_a2bc3f3fc539f62491c5ba59c44e37723}} 
+\index{Empresa@{Empresa}!novo\+\_\+funcionario@{novo\+\_\+funcionario}}
+\index{novo\+\_\+funcionario@{novo\+\_\+funcionario}!Empresa@{Empresa}}
+\subsubsection{\texorpdfstring{novo\+\_\+funcionario()}{novo\_funcionario()}}
+{\footnotesize\ttfamily int Empresa\+::novo\+\_\+funcionario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para adicionar novo funcionario na lista de funcionarios da classe. 
+
+\begin{DoxyReturn}{Returns}
+0 caso ja exista o funcionario que a pessoa está querendo adicionar 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classEmpresa_a09889fd249bbf085dad71d637538359f}\label{classEmpresa_a09889fd249bbf085dad71d637538359f}} 
+\index{Empresa@{Empresa}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Empresa@{Empresa}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\hyperlink{classEmpresa}{Empresa}}]{empresa }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobreacarga do operador $<$$<$ para poder imprimir dados de uma empresa. 
+
+\begin{DoxyReturn}{Returns}
+ostream os 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classes_8h}{classes.\+h}\item 
+\hyperlink{empresa_8cpp}{empresa.\+cpp}\end{DoxyCompactItemize}
